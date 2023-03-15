@@ -1,4 +1,5 @@
 resource "aws_instance" "server" {
+  cout = "2"
   ami           = var.ami
   instance_type = var.instance_type
   key_name = "testepacker"
@@ -11,16 +12,7 @@ resource "aws_instance" "server" {
   }
 }
 
-#resource "aws_instance" "server1" {
- # ami           = var.ami
- # instance_type = var.instance_type
 
-  #tags = {
-   # Name        = var.name1
-    #Environment = var.env1
-    #Provisioner = "Terraform"
-  #}
-#}
 
 
 
